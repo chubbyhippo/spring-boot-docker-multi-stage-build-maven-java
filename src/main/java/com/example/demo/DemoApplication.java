@@ -17,7 +17,7 @@ public class DemoApplication {
 
 @RestController
 class HelloController {
-    @GetMapping
+    @GetMapping("/")
     public Mono<String> hello() {
         return Mono.just("hello");
     }
