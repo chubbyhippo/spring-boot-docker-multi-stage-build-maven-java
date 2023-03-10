@@ -1,4 +1,4 @@
-FROM maven:3.8.6-amazoncorretto-19 AS builder
+FROM maven:3.8.7-amazoncorretto-19 AS builder
 WORKDIR build
 COPY pom.xml pom.xml
 RUN mvn -fn clean verify
